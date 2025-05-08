@@ -11,9 +11,16 @@ public class CameraController : MonoBehaviour
         alturaPantalla = tamañoPantalla * 2;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void calcularPosicion() 
+    {
+        int pantallaPersonaje = (int) (personaje.position.y / alturaPantalla);
+        float alturaCamara = (pantallaPersonaje * alturaPantalla) + tamañoPantalla;
+
+        transform.position = new Vector3(transform.position.x, alturaCamara, transform.position.z);
     }
 }
