@@ -1,38 +1,34 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
-{
-    public float velocidad;
-    private Rigidbody2D rb;
+public abstract class CharacterController : MonoBehaviour
+{public float velocidad;
+    protected Rigidbody2D rb;
 
-    private bool mirarDerecha = false;
+    protected bool mirarDerecha = false;
 
-    void Start()
+    protected virtual void Start()
     {
-        rb = GetComponent<Rigidbody2D>();   
-    }
-    void Update()
-    {
-        Movimiento();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    void Movimiento () 
+    protected virtual void Update()
     {
-        float inputMoviminetoHorizontal = Input.GetAxis("Horizontal"); 
-        float inputMoviminetoVertical = Input.GetAxis("Vertical"); 
-
-        rb.linearVelocity = new Vector2(inputMoviminetoHorizontal * velocidad, inputMoviminetoVertical * velocidad);
-
-        orientacion(inputMoviminetoHorizontal);
+        // Este método se sobrescribirá en las subclases para implementar comportamientos específicos
     }
 
-    void orientacion(float inputMoviminetoHorizontal)
+    protected void Movimiento(Vector2 direction)
+    {
+        rb.linearVelocity = direction * velocidad;
+        Orientacion(direction.x);
+    }
+
+    protected void Orientacion(float inputMoviminetoHorizontal)
     {
         if ((mirarDerecha == true && inputMoviminetoHorizontal < 0) || (mirarDerecha == false && inputMoviminetoHorizontal > 0))
         {
-           mirarDerecha = !mirarDerecha;
-           transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+            mirarDerecha = !mirarDerecha;
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
     }
 }
