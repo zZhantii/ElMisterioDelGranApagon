@@ -1,20 +1,14 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class IgorJimenez : CharacterController{
-    public Transform target; 
+public class IgorJimenez : CharacterController
+{
+    public Transform target;
 
-    protected override void Update()
+    protected override void FixedUpdate()
     {
-        PerseguirJugador();
-    }
+        if (target == null) return;
 
-    private void PerseguirJugador()
-    {
-        if (target != null)
-        {
-            Vector2 direction = (target.position - transform.position).normalized;
-            Movimiento(direction);
-        }
+        Vector2 direccion = (target.position - transform.position).normalized;
+        Mover(direccion);
     }
 }

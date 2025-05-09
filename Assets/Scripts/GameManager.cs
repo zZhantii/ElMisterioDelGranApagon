@@ -10,10 +10,10 @@ public class GameManager : MonoBehaviour
     private int pilasTotales;
 
     float tiempoLimite = 20f;
-    float tiempoRestante;  
+    float tiempoRestante;
     public float TiempoRestante { get { return tiempoRestante; } }
     private bool juegoTerminado = false;
- 
+
     public Light2D luzDelJugador;
 
     void Start()
