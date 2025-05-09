@@ -30,8 +30,6 @@ public class GameManager : MonoBehaviour
                 Debug.Log("No se encontró ninguna Light2D en la escena.");
             }
         }
-
-
     }
 
     void Update()
