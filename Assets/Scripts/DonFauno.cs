@@ -27,7 +27,7 @@ public class DonFauno : CharacterController
         }
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         if (gameOverText != null)
         {
