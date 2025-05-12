@@ -6,22 +6,47 @@ public class RadioController : MonoBehaviour
     public Transform jugador;
     public Vector3 offset = new Vector3(0,100, 0);
 
+    private GameManager gameManager;
+    
+    void Start()
+    {
+        gameManager = FindFirstObjectByType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("No se encontró GameManager en la escena.");
+        }
+        else
+        {
+            Debug.Log("GameManager encontrado. Pilas restantes: " + gameManager.PilasRestantes);
+        }
+    }
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Jugador cerca de la radio");
-
-            GameObject igorInstance = Instantiate(igorJimenez, jugador.position + offset, Quaternion.identity);
-            
-
-            IgorJimenez aiScript = igorInstance.GetComponent<IgorJimenez>();
-            if (aiScript != null)
+            if (gameManager != null && gameManager.PilasTotales >= 4)
             {
-                aiScript.jugador = jugador;
-            }
+                Debug.Log("Jugador cerca de la radio y tiene todas las pilas. Activando a Igor...");
 
-            gameObject.SetActive(false);
+                // Instanciar a Igor
+                GameObject igorInstance = Instantiate(igorJimenez, jugador.position + offset, Quaternion.identity);
+
+                // Asignar objetivo a Igor
+                IgorJimenez aiScript = igorInstance.GetComponent<IgorJimenez>();
+                if (aiScript != null)
+                {
+                    aiScript.jugador = jugador;
+                }
+
+                // Desactivar la radio
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("El jugador no tiene suficientes pilas para activar la radio.");
+            }
         }
     }
 

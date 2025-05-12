@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
 
     public int PilasTotales { get { return pilasTotales; } }
-    private int pilasRestantes = 3;
+    private int pilasRestantes = 4;
     public int PilasRestantes { get { return pilasRestantes; } }
     private int pilasTotales;
 
@@ -64,9 +64,9 @@ public class GameManager : MonoBehaviour
     {
         if (luzDelJugador != null)
         {
-            luzDelJugador.pointLightOuterAngle += 5f;
+            luzDelJugador.pointLightOuterAngle += 40f;
 
-            luzDelJugador.pointLightOuterRadius += 1f;
+            luzDelJugador.pointLightOuterRadius += 5f;
 
             Debug.Log("Aumentando luz: ángulo " + luzDelJugador.pointLightOuterAngle + ", radio " + luzDelJugador.pointLightOuterRadius);
         }
