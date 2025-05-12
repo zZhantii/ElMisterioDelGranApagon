@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainLevel.unity
     guid: aafe75c7dcc53c844abb8375f10e4816
+  - enabled: 1
+    path: Assets/Scenes/PauseMenu.unity
+    guid: b4a4567d5914a764b84c06416a3e4998
   - enabled: 0
     path: Assets/Scenes/SceneJavi.unity
     guid: e1c59a104fd52cc49875a4b0587fa53f
