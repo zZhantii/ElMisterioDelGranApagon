@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
         if (luzDelJugador == null)
         {
-            luzDelJugador = FindObjectOfType<Light2D>();
+            luzDelJugador = FindFirstObjectByType<Light2D>();
             Debug.Log("Se ha encontrado la luz del jugador: " + luzDelJugador);
 
             if (luzDelJugador == null)
