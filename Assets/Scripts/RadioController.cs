@@ -4,6 +4,7 @@ public class RadioController : MonoBehaviour
 {
     public GameObject igorJimenez;
     public Transform jugador;
+    public GameObject rayoExistenteEnEscena;
     public Vector3 offset = new Vector3(0,100, 0);
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -19,6 +20,7 @@ public class RadioController : MonoBehaviour
             if (aiScript != null)
             {
                 aiScript.jugador = jugador;
+                aiScript.rayo = rayoExistenteEnEscena; 
             }
 
             gameObject.SetActive(false);
