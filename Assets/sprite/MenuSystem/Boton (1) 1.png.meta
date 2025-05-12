@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: ad7338a410e37474b9fa82433d4ea5a3
+guid: 1459dcd1789c6784a987a2eb5be3f86d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8070686850402279387
-    second: Radio_0
-  - first:
-      213: 3700292194808277242
-    second: Radio_1
-  - first:
-      213: -5087849252598239568
-    second: Radio_2
-  - first:
-      213: -9042603785333544692
-    second: Radio_3
+      213: 2652430413336845844
+    second: Boton (1) 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Radio_0
+      name: Boton (1) 1_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 11
-        width: 189
-        height: 242
+        x: 0
+        y: 0
+        width: 422
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5202b54e1192fff80800000000000000
-      internalID: -8070686850402279387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Radio_1
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 172
-        width: 53
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af8a2bc65241a5330800000000000000
-      internalID: 3700292194808277242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Radio_2
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 188
-        width: 39
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0be2524bf045469b0800000000000000
-      internalID: -5087849252598239568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Radio_3
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 202
-        width: 22
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c09679a54c7328280800000000000000
-      internalID: -9042603785333544692
+      spriteID: 41e926268635fc420800000000000000
+      internalID: 2652430413336845844
       vertices: []
       indices: 
       edges: []
@@ -222,11 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Radio_0: -8070686850402279387
-      Radio_1: 3700292194808277242
-      Radio_2: -5087849252598239568
-      Radio_3: -9042603785333544692
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

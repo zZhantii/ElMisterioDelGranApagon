@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: ad7338a410e37474b9fa82433d4ea5a3
+guid: bf506ec50e323aa48821295ab50b9492
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8070686850402279387
-    second: Radio_0
+      213: 1705366854281314064
+    second: DonFaunoWalk (1)_0
   - first:
-      213: 3700292194808277242
-    second: Radio_1
+      213: 6992828583393203912
+    second: DonFaunoWalk (1)_1
   - first:
-      213: -5087849252598239568
-    second: Radio_2
+      213: 4679639676377636032
+    second: DonFaunoWalk (1)_2
   - first:
-      213: -9042603785333544692
-    second: Radio_3
+      213: -5025789750813911563
+    second: DonFaunoWalk (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Radio_0
+      name: DonFaunoWalk (1)_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 11
-        width: 189
-        height: 242
+        x: 61
+        y: 345
+        width: 231
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5202b54e1192fff80800000000000000
-      internalID: -8070686850402279387
+      spriteID: 01fb9295e1eaaa710800000000000000
+      internalID: 1705366854281314064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Radio_1
+      name: DonFaunoWalk (1)_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 172
-        width: 53
-        height: 141
+        x: 295
+        y: 345
+        width: 224
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af8a2bc65241a5330800000000000000
-      internalID: 3700292194808277242
+      spriteID: 8c699580c848b0160800000000000000
+      internalID: 6992828583393203912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Radio_2
+      name: DonFaunoWalk (1)_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 188
-        width: 39
-        height: 95
+        x: 529
+        y: 345
+        width: 224
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0be2524bf045469b0800000000000000
-      internalID: -5087849252598239568
+      spriteID: 0cc105bed7b61f040800000000000000
+      internalID: 4679639676377636032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Radio_3
+      name: DonFaunoWalk (1)_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 202
-        width: 22
-        height: 57
+        x: 757
+        y: 345
+        width: 222
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c09679a54c7328280800000000000000
-      internalID: -9042603785333544692
+      spriteID: 5f510f279dec04ab0800000000000000
+      internalID: -5025789750813911563
       vertices: []
       indices: 
       edges: []
@@ -223,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Radio_0: -8070686850402279387
-      Radio_1: 3700292194808277242
-      Radio_2: -5087849252598239568
-      Radio_3: -9042603785333544692
+      DonFaunoWalk (1)_0: 1705366854281314064
+      DonFaunoWalk (1)_1: 6992828583393203912
+      DonFaunoWalk (1)_2: 4679639676377636032
+      DonFaunoWalk (1)_3: -5025789750813911563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
