@@ -11,6 +11,7 @@ public class MenuSystem : MonoBehaviour
 
     public static MenuSystem Instance { get; private set; }
 
+    // Singleton para asegurarme que solo haya una instancia del script
     void Awake()
     {
         if (Instance == null)
@@ -46,7 +47,7 @@ public class MenuSystem : MonoBehaviour
 
         SceneManager.LoadSceneAsync("PauseMenu", LoadSceneMode.Additive).completed += (asyncOperation) =>
         {
-            Debug.Log("PauseMenu cargado");
+            // Debug.Log("PauseMenu cargado");
             menuCargado = true;
             enTransicion = false;
 
@@ -54,19 +55,27 @@ public class MenuSystem : MonoBehaviour
         };
     }
 
+    // Metodo para la configuracion de los botones del menu de pausa
     private void ConfigurarBotonesPausa()
     {
         StartCoroutine(ConfigurarBotonesCoroutine());
     }
 
+    // Coroutine con tiempo de espera para que termine de cargar el menu
     private IEnumerator ConfigurarBotonesCoroutine()
     {
+        // Tiempo de espera
         yield return new WaitForSecondsRealtime(0.1f);
 
+        // Recoge todos los Canvas de la escena
         Canvas[] todosLosCanvas = FindObjectsOfType<Canvas>(true);
 
         if (todosLosCanvas.Length == 0)
-            Debug.LogWarning("No se encontraron Canvas al cargar PauseMenu.");
+        {
+            Debug.LogWarning("No se encontró ningún Canvas en la escena PauseMenu.");
+            // Termina el coroutine 
+            yield break;
+        }
 
         foreach (Canvas canvas in todosLosCanvas)
         {
@@ -74,45 +83,33 @@ public class MenuSystem : MonoBehaviour
 
             foreach (Button boton in botones)
             {
-                Debug.Log("Botón encontrado: " + boton.name);
-                if (boton.name.Contains("Continuar") || boton.name.ToLower().Contains("continuar") ||
-                    boton.name.Contains("Resume") || boton.name.ToLower().Contains("resume"))
+                if (boton.name.Contains("Continuar"))
                 {
-
                     boton.onClick.RemoveAllListeners();
 
                     boton.onClick.AddListener(() =>
                     {
                         Continuar();
                     });
-
-                    Debug.Log("Botón Continuar configurado correctamente");
                 }
-                else if (boton.name.Contains("Salir") || boton.name.ToLower().Contains("salir") ||
-                         boton.name.Contains("Quit") || boton.name.ToLower().Contains("quit") ||
-                         boton.name.Contains("Exit") || boton.name.ToLower().Contains("exit"))
+                else if (boton.name.Contains("Salir"))
                 {
-
                     boton.onClick.RemoveAllListeners();
 
                     boton.onClick.AddListener(() =>
                     {
                         Salir();
                     });
-
-                    Debug.Log("Botón Salir configurado correctamente");
                 }
             }
+
         }
     }
 
-     
-
-public void Continuar()
+    public void Continuar()
     {
         if (!menuCargado || enTransicion) return;
 
-        Debug.Log("Método Continuar invocado");
         enTransicion = true;
 
         Time.timeScale = 1f;
@@ -122,14 +119,16 @@ public void Continuar()
         {
             menuCargado = false;
             enTransicion = false;
-            Debug.Log("Menú de pausa descargado correctamente");
+            // Debug.Log("Menú de pausa descargado correctamente");
         };
     }
 
     public void Salir()
     {
-        Debug.Log("Saliendo del juego");
         Application.Quit();
-
+        // Cierra el editor
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }
