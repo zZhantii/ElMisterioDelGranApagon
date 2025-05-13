@@ -1,10 +1,22 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using TMPro;
 
 public class DonFauno : CharacterController
 {
     public int vida = 1;
     public TextMeshProUGUI gameOverText;
+    public Light2D luzJugador;
+
+    protected override void Start()
+    {
+        base.Start(); 
+
+        if (luzJugador == null)
+        {
+            luzJugador = GetComponent<Light2D>();
+        }
+    }
 
     protected override void FixedUpdate()
     {
@@ -27,6 +39,14 @@ public class DonFauno : CharacterController
         }
     }
 
+    public void AumentarLuz(float cantidad)
+    {
+        if (luzJugador != null)
+        {
+            luzJugador.pointLightOuterRadius += cantidad;
+        }
+    }
+
     public void GameOver()
     {
         if (gameOverText != null)
@@ -34,7 +54,7 @@ public class DonFauno : CharacterController
             gameOverText.enabled = true;
         }
 
-        Time.timeScale = 0; 
+        Time.timeScale = 0;
         Debug.Log("Game Over: DonFauno ha sido derrotado.");
     }
 }
