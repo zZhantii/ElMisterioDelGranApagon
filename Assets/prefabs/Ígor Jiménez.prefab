@@ -197,4 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2.5
-  target: {fileID: 0}
+  jugador: {fileID: 0}
+  rayoPrefab: {fileID: 0}
+  puntoDeInstancia: {fileID: 0}
