@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7350728708732114983}
   m_Layer: 0
   m_Name: "\xCDgor Jim\xE9nez"
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,4 +197,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2.5
-  target: {fileID: 0}
+  jugador: {fileID: 0}

@@ -18,25 +18,4 @@ public class IgorJimenez : CharacterController
             Mover(direccion.normalized);
         }
     }
-
-    private bool estaVivo = true;
-
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("Player") && estaVivo)
-        {
-            Debug.Log("¡Igor ha alcanzado al jugador!");
-
-            DonFauno donFauno = col.gameObject.GetComponent<DonFauno>();
-            if (donFauno != null)
-            {
-                donFauno.GameOver();
-            }
-
-            // Detener a Igor
-            estaVivo = false;
-            rb.linearVelocity = Vector2.zero;
-            GetComponent<Collider2D>().enabled = false;
-        }
-    }
 }

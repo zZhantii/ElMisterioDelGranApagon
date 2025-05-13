@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         {
             luzDelJugador.pointLightOuterAngle += 40f;
 
-            luzDelJugador.pointLightOuterRadius += 5f;
+            luzDelJugador.pointLightOuterRadius += 40f;
 
             Debug.Log("Aumentando luz: ángulo " + luzDelJugador.pointLightOuterAngle + ", radio " + luzDelJugador.pointLightOuterRadius);
         }
