@@ -632,7 +632,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439458862}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -1117,7 +1117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f540a3a7b4cb8143b46923c77fc411d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
   pilas: {fileID: 472996022}
   time: {fileID: 1192085625}
 --- !u!1 &1359340991

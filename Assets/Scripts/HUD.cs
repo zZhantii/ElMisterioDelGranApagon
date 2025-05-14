@@ -5,11 +5,6 @@ public class HUD : MonoBehaviour
 {
     public TextMeshProUGUI pilas;
     public TextMeshProUGUI time;
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         pilas.text = GameManager.instance.PilasTotales.ToString() + " / " + GameManager.instance.PilasRestantes.ToString();
