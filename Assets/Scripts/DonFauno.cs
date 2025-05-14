@@ -20,24 +20,6 @@ public class DonFauno : CharacterController
         }
     }
 
-private bool powerUpActivo = false;
-private float powerUpTimer = 0f;
-private float velocidadOriginal;
-public float velocidadAumentada = 10f;
-
-public void ActivarPowerUp(float duracion)
-{
-    if (!powerUpActivo)
-    {
-        velocidadOriginal = velocidad; 
-        velocidad = velocidadAumentada;
-    }
-
-    powerUpActivo = true;
-    powerUpTimer = duracion;
-
-    Debug.Log("Power-Up de velocidad activado por " + duracion + " segundos.");
-}
     protected override void FixedUpdate()
     {
         float h = Input.GetAxisRaw("Horizontal");
