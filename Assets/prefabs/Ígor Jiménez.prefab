@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7350728708732114983}
   m_Layer: 0
   m_Name: "\xCDgor Jim\xE9nez"
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.489
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 2
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -197,6 +197,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2.5
-  jugador: {fileID: 0}
-  rayoPrefab: {fileID: 0}
-  puntoDeInstancia: {fileID: 0}
+  jugador: {fileID: 3424143262770422194, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}

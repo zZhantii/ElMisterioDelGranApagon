@@ -68,7 +68,7 @@ public class MenuSystem : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.1f);
 
         // Recoge todos los Canvas de la escena
-        Canvas[] todosLosCanvas = FindObjectsOfType<Canvas>(true);
+        Canvas[] todosLosCanvas = FindObjectsByType<Canvas>(FindObjectsSortMode.None);
 
         if (todosLosCanvas.Length == 0)
         {

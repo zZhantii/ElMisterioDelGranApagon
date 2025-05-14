@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class IgorJimenez : CharacterController
 {
-public Transform jugador; // Asignar desde el editor o desde RadioInteract.cs
-
-public GameObject rayo;
-public Transform puntoDeInstancia;
+     public Transform jugador; 
 
 
     protected override void Start()
     {
-        base.Start(); // Llama al Start() de CharacterController
-        ActivarRayo();
+        base.Start();
+
+        GameObject faunoGO = GameObject.FindGameObjectWithTag("Player");
+
+        if (faunoGO != null) {
+            jugador = faunoGO.transform;
+        } 
     }
 
     protected override void FixedUpdate()
@@ -21,16 +23,6 @@ public Transform puntoDeInstancia;
             Vector2 direccion = (Vector2)(jugador.position - transform.position);
             Mover(direccion.normalized);
         }
-    }
-
-    private void ActivarRayo()
-    {
-       
-         if (rayo!= null)
-    {
-        rayo.SetActive(true);
-    }
-      
     }
 
     private bool estaVivo = true;

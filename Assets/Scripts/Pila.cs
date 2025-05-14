@@ -3,14 +3,21 @@ using UnityEngine;
 public class Pila : MonoBehaviour
 {
     public int valor = 1;
-    public GameManager gameManager;
+    public float cantidadAumentoLuz = 1.5f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            gameManager.sumarPilas(valor);
-            Destroy(this.gameObject);
+            GameManager.instance.sumarPilas(valor);
+
+            DonFauno donFauno = collision.GetComponent<DonFauno>();
+            if (donFauno != null)
+            {
+                donFauno.AumentarLuz(cantidadAumentoLuz);
+            }
+
+            Destroy(gameObject);
         }
     }
 }
