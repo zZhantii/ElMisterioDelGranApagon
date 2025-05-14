@@ -4,20 +4,15 @@ public class RadioController : MonoBehaviour
 {
     public GameObject igorJimenez;
     public Transform jugador;
-    public Vector3 offset = new Vector3(0,100, 0);
-
-    private GameManager gameManager;
+    public Vector3 offset = new Vector3(0,1, 0);
     
     void Start()
     {
-        gameManager = FindFirstObjectByType<GameManager>();
-        if (gameManager == null)
+        GameObject IgorGO = GameObject.FindGameObjectWithTag("Enemigo");
+
+        if (IgorGO != null)
         {
-            Debug.LogError("No se encontró GameManager en la escena.");
-        }
-        else
-        {
-            Debug.Log("GameManager encontrado. Pilas restantes: " + gameManager.PilasRestantes);
+            jugador = IgorGO.transform;
         }
     }
 
@@ -26,7 +21,7 @@ public class RadioController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (gameManager != null && gameManager.PilasTotales >= 4)
+            if (GameManager.instance != null && GameManager.instance.PilasTotales >= 4)
             {
                 Debug.Log("Jugador cerca de la radio y tiene todas las pilas. Activando a Igor...");
 
