@@ -1,35 +1,38 @@
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
 
     public int PilasTotales { get { return pilasTotales; } }
     private int pilasRestantes = 4;
     public int PilasRestantes { get { return pilasRestantes; } }
     private int pilasTotales;
 
-    float tiempoLimite = 20f;
+    float tiempoLimite = 100f;
     float tiempoRestante;
     public float TiempoRestante { get { return tiempoRestante; } }
     private bool juegoTerminado = false;
 
-    public Light2D luzDelJugador;
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
         tiempoRestante = tiempoLimite;
-
-        if (luzDelJugador == null)
-        {
-            luzDelJugador = FindFirstObjectByType<Light2D>();
-            Debug.Log("Se ha encontrado la luz del jugador: " + luzDelJugador);
-
-            if (luzDelJugador == null)
-            {
-                Debug.Log("No se encontró ninguna Light2D en la escena.");
-            }
-        }
     }
 
     void Update()
@@ -51,29 +54,11 @@ public class GameManager : MonoBehaviour
     public void sumarPilas(int pilasSumar)
     {
         pilasTotales += pilasSumar;
-        aumentarBrillo();
     }
 
     void TerminarJuego()
     {
         juegoTerminado = true;
-        Debug.Log("Juego terminado. Tiempo agotado.");
+        SceneManager.LoadScene("GameOver");
     }
-
-    void aumentarBrillo()
-    {
-        if (luzDelJugador != null)
-        {
-            luzDelJugador.pointLightOuterAngle += 40f;
-
-            luzDelJugador.pointLightOuterRadius += 5f;
-
-            Debug.Log("Aumentando luz: ángulo " + luzDelJugador.pointLightOuterAngle + ", radio " + luzDelJugador.pointLightOuterRadius);
-        }
-        else
-        {
-            Debug.Log("No se ha asignado la luz del jugador.");
-        }
-    }
-
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using TMPro;
 
 public class DonFauno : CharacterController
@@ -7,6 +8,17 @@ public class DonFauno : CharacterController
     public TextMeshProUGUI gameOverText;
     public AudioSource pasosAudioSource; 
     public AudioClip pasosClip;
+    public Light2D luzJugador;
+
+    protected override void Start()
+    {
+        base.Start(); 
+
+        if (luzJugador == null)
+        {
+            luzJugador = GetComponent<Light2D>();
+        }
+    }
 
 private bool powerUpActivo = false;
 private float powerUpTimer = 0f;
@@ -78,6 +90,14 @@ public void ActivarPowerUp(float duracion)
         }
     }
 
+    public void AumentarLuz(float cantidad)
+    {
+        if (luzJugador != null)
+        {
+            luzJugador.pointLightOuterRadius += cantidad;
+        }
+    }
+
     public void GameOver()
     {
         if (gameOverText != null)
@@ -85,7 +105,7 @@ public void ActivarPowerUp(float duracion)
             gameOverText.enabled = true;
         }
 
-        Time.timeScale = 0; 
+        Time.timeScale = 0;
         Debug.Log("Game Over: DonFauno ha sido derrotado.");
     }
 }
