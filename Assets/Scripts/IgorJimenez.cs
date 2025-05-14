@@ -39,7 +39,7 @@ public class IgorJimenez : CharacterController
                 donFauno.GameOver();
             }
 
-          
+          // Desactivar el objeto IgorJimenez
             estaVivo = false;
             rb.linearVelocity = Vector2.zero;
             GetComponent<Collider2D>().enabled = false;
