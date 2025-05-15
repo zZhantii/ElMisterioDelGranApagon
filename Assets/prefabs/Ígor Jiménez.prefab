@@ -198,3 +198,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 2.5
   jugador: {fileID: 3424143262770422194, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+  rayo: {fileID: 0}

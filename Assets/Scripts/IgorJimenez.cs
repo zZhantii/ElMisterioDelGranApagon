@@ -4,17 +4,17 @@ public class IgorJimenez : CharacterController
 {
      public Transform jugador; 
 
-
     protected override void Start()
     {
         base.Start();
-
         GameObject faunoGO = GameObject.FindGameObjectWithTag("Player");
 
         if (faunoGO != null) {
             jugador = faunoGO.transform;
         } 
     }
+
+    
 
     protected override void FixedUpdate()
     {
