@@ -83,13 +83,13 @@ public void ActivarPowerUp(float duracion)
         if (colision.gameObject.CompareTag("Enemigo"))
         {
             vida--;
+            Debug.Log("DonFauno golpeado. Vida restante: " + vida);
             if (vida <= 0)
             {
-                GameOver();
+                DerrotarDonFauno();
             }
         }
     }
-
     public void AumentarLuz(float cantidad)
     {
         if (luzJugador != null)
@@ -98,14 +98,38 @@ public void ActivarPowerUp(float duracion)
         }
     }
 
+    public void DerrotarDonFauno()
+    {
+        vida = 0;
+        Debug.Log("DerrotarDonFauno llamado. Vida: " + vida);
+        GameOver();
+    }
+
+
     public void GameOver()
     {
         if (gameOverText != null)
         {
             gameOverText.enabled = true;
+            Debug.Log("gameOverText habilitado.");
+        }
+        else
+        {
+            Debug.LogError("gameOverText no está asignado.");
         }
 
         Time.timeScale = 0;
         Debug.Log("Game Over: DonFauno ha sido derrotado.");
+
+        // Llamar al GameManager para terminar el juego
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.TerminarJuego();
+            Debug.Log("GameManager.TerminarJuego() llamado.");
+        }
+        else
+        {
+            Debug.LogError("GameManager no está asignado.");
+        }
     }
 }

@@ -27,22 +27,24 @@ public class IgorJimenez : CharacterController
 
     private bool estaVivo = true;
 
-    private void OnCollisionEnter2D(Collision2D col)
+    protected void OnCollisionEnter2D(Collision2D collision)
     {
-        if (col.gameObject.CompareTag("Player") && estaVivo)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("¡Igor ha alcanzado al jugador!");
-
-            DonFauno donFauno = col.gameObject.GetComponent<DonFauno>();
+            DonFauno donFauno = collision.gameObject.GetComponent<DonFauno>();
             if (donFauno != null)
             {
-                donFauno.GameOver();
+                donFauno.DerrotarDonFauno();
+                Debug.Log("IgorJimenez golpeó a DonFauno.");
             }
-
-          // Desactivar el objeto IgorJimenez
-            estaVivo = false;
-            rb.linearVelocity = Vector2.zero;
-            GetComponent<Collider2D>().enabled = false;
+            else
+            {
+                Debug.LogError("DonFauno no está asignado en la colisión.");
+            }
+        }
+        else
+        {
+            Debug.Log("Colisión detectada, pero no es con el jugador.");
         }
     }
 }
