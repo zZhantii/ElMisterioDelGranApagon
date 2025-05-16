@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public int PilasRestantes { get { return pilasRestantes; } }
     private int pilasTotales;
 
-    float tiempoLimite = 5f;
+    float tiempoLimite = 100f;
     float tiempoRestante;
     public float TiempoRestante { get { return tiempoRestante; } }
     private bool juegoTerminado = false;
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"Update - partidaIniciada: {partidaIniciada}, juegoTerminado: {juegoTerminado}, tiempoRestante: {tiempoRestante}");
+        // Debug.Log($"Update - partidaIniciada: {partidaIniciada}, juegoTerminado: {juegoTerminado}, tiempoRestante: {tiempoRestante}");
 
         if (!partidaIniciada || juegoTerminado)
             return;
@@ -85,13 +85,24 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void TerminarJuego()
+    public void TerminarJuego(bool win=false)
     {
-        Debug.Log("TerminarJuego llamado");
+
+        if (win)
+        {
+            Debug.Log("¡Victoria! Has ganado el juego.");
+            SceneManager.LoadScene("WinMenu");
+        }
+        else
+        {
+            Debug.Log("¡Derrota! Has perdido el juego.");
+
+            // Mostrar menú GameOver (activo el canvas o escena)
+            SceneManager.LoadScene("GameOver");
+        }
         juegoTerminado = true;
-        partidaIniciada = false;
-        // Mostrar menú GameOver (activo el canvas o escena)
-        SceneManager.LoadScene("GameOver");
+            partidaIniciada = false;
+    
     }
 
 }
