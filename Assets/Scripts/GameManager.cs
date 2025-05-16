@@ -27,18 +27,15 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
-            Debug.Log("🆕 GameManager asignado y persiste");
         }
         else
         {
-            Debug.Log("Duplicado GameManager destruido");
             Destroy(gameObject);
         }
     }
 
     void Start()
     {
-        Debug.Log("GameManager Start ejecutado");
         tiempoRestante = tiempoLimite;
         partidaIniciada = false;
         juegoTerminado = false;
@@ -61,8 +58,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-
     public void sumarPilas(int pilasSumar)
     {
         pilasTotales += pilasSumar;
@@ -70,27 +65,21 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
-        Debug.Log("ResetGame llamado");
         tiempoRestante = tiempoLimite;
         pilasTotales = 0;
-        pilasRestantes = 4;
         juegoTerminado = false;
-        // NO toques partidaIniciada aquí
     }
 
     public void IniciarJuego()
     {
-        Debug.Log("IniciarJuego llamado");
         partidaIniciada = true;
     }
 
 
     void TerminarJuego()
     {
-        Debug.Log("TerminarJuego llamado");
         juegoTerminado = true;
         partidaIniciada = false;
-        // Mostrar menú GameOver (activo el canvas o escena)
         SceneManager.LoadScene("GameOver");
     }
 
