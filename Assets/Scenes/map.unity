@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 312716886}
   - component: {fileID: 312716885}
   - component: {fileID: 312716887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1258,7 +1258,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1268,7 +1268,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1318,7 +1318,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 7
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1807,8 +1807,8 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 827950775, guid: 09c952ebd1793403095bb1ca4d3cac34, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 8
     m_Data: {fileID: -1140028741, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 4
@@ -1817,10 +1817,10 @@ Tilemap:
     m_Data: {fileID: -163532822, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 1018187017, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 1280011258, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1176187772, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
+    m_Data: {fileID: 827950775, guid: 09c952ebd1793403095bb1ca4d3cac34, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: -977111636, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 3
@@ -1837,10 +1837,10 @@ Tilemap:
     m_Data: {fileID: 1136730089, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 132617166, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 1280011258, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1176187772, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 104
     m_Data: {fileID: -952522407, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   m_TileMatrixArray:
@@ -2088,7 +2088,7 @@ GameObject:
   - component: {fileID: 605241275}
   - component: {fileID: 605241274}
   - component: {fileID: 605241273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9895,7 +9895,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 53
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -33320,8 +33320,8 @@ Tilemap:
     m_Data: {fileID: -8120323925528636241, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 26
     m_Data: {fileID: 8938356945095094423, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1053177640, guid: 09c952ebd1793403095bb1ca4d3cac34, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 793
     m_Data: {fileID: -952522407, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 4
@@ -33352,8 +33352,8 @@ Tilemap:
     m_Data: {fileID: 595508747133529673, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 20
     m_Data: {fileID: 1558959487191823921, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 1053177640, guid: 09c952ebd1793403095bb1ca4d3cac34, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -720253603, guid: 7f0528e2cfd96414e871a5799ac66ef9, type: 3}
   - m_RefCount: 12
