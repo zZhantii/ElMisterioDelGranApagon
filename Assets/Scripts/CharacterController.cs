@@ -1,38 +1,31 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    public float velocidad;
-    private Rigidbody2D rb;
+    public float velocidad = 5f;
 
+    protected Rigidbody2D rb;
     private bool mirarDerecha = false;
 
-    void Start()
+    protected virtual void Start()
     {
-        rb = GetComponent<Rigidbody2D>();   
-    }
-    void Update()
-    {
-        Movimiento();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    void Movimiento () 
+    protected virtual void FixedUpdate()
     {
-        float inputMoviminetoHorizontal = Input.GetAxis("Horizontal"); 
-        float inputMoviminetoVertical = Input.GetAxis("Vertical"); 
-
-        rb.linearVelocity = new Vector2(inputMoviminetoHorizontal * velocidad, inputMoviminetoVertical * velocidad);
-
-        orientacion(inputMoviminetoHorizontal);
     }
 
-    void orientacion(float inputMoviminetoHorizontal)
+    protected void Mover(Vector2 direccion)
     {
-        if ((mirarDerecha == true && inputMoviminetoHorizontal < 0) || (mirarDerecha == false && inputMoviminetoHorizontal > 0))
+        rb.linearVelocity = direccion * velocidad;
+
+        if ((mirarDerecha && direccion.x < 0) || (!mirarDerecha && direccion.x > 0))
         {
-           mirarDerecha = !mirarDerecha;
-           transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+            mirarDerecha = !mirarDerecha;
+            Vector3 escala = transform.localScale;
+            escala.x *= -1;
+            transform.localScale = escala;
         }
     }
 }
