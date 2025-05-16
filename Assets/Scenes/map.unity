@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 312716886}
   - component: {fileID: 312716885}
   - component: {fileID: 312716887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2088,7 +2088,7 @@ GameObject:
   - component: {fileID: 605241275}
   - component: {fileID: 605241274}
   - component: {fileID: 605241273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
