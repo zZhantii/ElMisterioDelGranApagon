@@ -877,6 +877,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839617439}
   m_CullTransparentMesh: 1
+--- !u!82 &1074067359 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5436996343539612413, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+  m_PrefabInstance: {fileID: 5033829807772225940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1192085623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1493,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: DonFauno
       objectReference: {fileID: 0}
+    - target: {fileID: 5436996343539612413, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 4943b8712449d48cba74de95c757b8f7, type: 3}
+    - target: {fileID: 5436996343539612413, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4943b8712449d48cba74de95c757b8f7, type: 3}
+    - target: {fileID: 8434990930138927632, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: pasosClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4943b8712449d48cba74de95c757b8f7, type: 3}
+    - target: {fileID: 8434990930138927632, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: pasosAudioSource
+      value: 
+      objectReference: {fileID: 1074067359}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

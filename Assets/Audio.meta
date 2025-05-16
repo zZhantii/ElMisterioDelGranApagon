@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Audio.meta
-guid: e61a35d1cf20248489c09a024e3c1810
+guid: 74039320d2ee240118b262a66773553c
 folderAsset: yes
 DefaultImporter:
-========
-guid: 87ce621a4a8e5d8499f32ed651fd782f
-PrefabImporter:
->>>>>>>> Santiago:Assets/prefabs/DonFauno.prefab.meta
   externalObjects: {}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:

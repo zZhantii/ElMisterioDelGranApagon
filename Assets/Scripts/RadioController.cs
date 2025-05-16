@@ -4,7 +4,8 @@ public class RadioController : MonoBehaviour
 {
     public GameObject igorJimenez;
     public Transform jugador;
-    public Vector3 offset = new Vector3(0,1, 0);
+    public GameObject rayo; 
+    public Vector3 offset = new Vector3(0, 1, 0);
     
     void Start()
     {
@@ -15,7 +16,16 @@ public class RadioController : MonoBehaviour
             jugador = IgorGO.transform;
         }
     }
-
+private void ActivarRayo()
+    {
+       
+         if (rayo!= null)
+    {
+        Debug.Log("Rayo activado");
+        rayo.SetActive(true);
+    }
+      
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,7 +42,8 @@ public class RadioController : MonoBehaviour
                 IgorJimenez aiScript = igorInstance.GetComponent<IgorJimenez>();
                 if (aiScript != null)
                 {
-                    aiScript.jugador = jugador;
+                    aiScript.jugador = jugador;              // ✅ Asignamos el rayo
+                    ActivarRayo(); 
                 }
 
                 // Desactivar la radio
