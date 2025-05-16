@@ -312,7 +312,7 @@ MonoBehaviour:
   m_text: GRAN APAGON
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
+  m_sharedMaterial: {fileID: 6509869432110760523, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -473,7 +473,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1142721611}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Jugar
+        m_MethodName: IrAIntro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_text: Salir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
+  m_sharedMaterial: {fileID: 6509869432110760523, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_text: Jugar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
+  m_sharedMaterial: {fileID: 6509869432110760523, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_text: Ayuda
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
+  m_sharedMaterial: {fileID: 6509869432110760523, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1594,7 +1594,7 @@ MonoBehaviour:
   m_text: EL MISTERIO DEL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
+  m_sharedMaterial: {fileID: 6509869432110760523, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1781,3 +1781,4 @@ SceneRoots:
   - {fileID: 883723022}
   - {fileID: 1557743243}
   - {fileID: 1618393117}
+  - {fileID: 1387612756}

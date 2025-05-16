@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"Update - partidaIniciada: {partidaIniciada}, juegoTerminado: {juegoTerminado}, tiempoRestante: {tiempoRestante}");
+        // Debug.Log($"Update - partidaIniciada: {partidaIniciada}, juegoTerminado: {juegoTerminado}, tiempoRestante: {tiempoRestante}");
 
         if (!partidaIniciada || juegoTerminado)
             return;
