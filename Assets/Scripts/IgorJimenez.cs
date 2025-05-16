@@ -12,6 +12,12 @@ public Transform puntoDeInstancia;
     {
         base.Start(); // Llama al Start() de CharacterController
         ActivarRayo();
+
+        GameObject faunoGO = GameObject.FindGameObjectWithTag("Player");
+
+        if (faunoGO != null) {
+            jugador = faunoGO.transform;
+        } 
     }
 
     protected override void FixedUpdate()
