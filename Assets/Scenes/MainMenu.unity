@@ -473,7 +473,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1142721611}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Jugar
+        m_MethodName: IrAIntro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1737,3 +1737,4 @@ SceneRoots:
   - {fileID: 883723022}
   - {fileID: 1557743243}
   - {fileID: 1618393117}
+  - {fileID: 1387612756}
