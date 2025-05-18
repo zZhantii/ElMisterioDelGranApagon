@@ -10,16 +10,17 @@ public class Gate : MonoBehaviour
        {
            
            DonFauno jugador = collision.GetComponent<DonFauno>();
-           if (jugador != null)
-           {
-               Debug.Log("Componente DonFauno encontrado");
-               GameManager.instance.TerminarJuego(true);
+           IgorJimenez igor = FindFirstObjectByType<IgorJimenez>();
+           if (jugador != null && igor != null)
+            {
+                Debug.Log("Componente DonFauno encontrado");
+                GameManager.instance.TerminarJuego(true);
 
-           }
-           else
-           {
-               Debug.LogError("No se encontró el componente DonFauno");
-           }
+            }
+            else
+            {
+                Debug.LogError("No se encontró el componente DonFauno");
+            }
 
          
        }
