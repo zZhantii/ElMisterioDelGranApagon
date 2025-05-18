@@ -4,14 +4,22 @@ using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
+     public GameObject MusicaPrincipal;
     public void IrAIntro()
     {
-        
+          MusicaMenu musica = FindFirstObjectByType<MusicaMenu>();
+    
+
+    if (musica != null)
+    {
+        Destroy(musica.gameObject);
+    }
         SceneManager.LoadScene("IntroGame");
     }
 
     public void MostrarAyuda()
     {
+        
          SceneManager.LoadScene("Help");
     }
 
