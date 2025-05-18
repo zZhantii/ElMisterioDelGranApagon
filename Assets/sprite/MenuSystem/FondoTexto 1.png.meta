@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 24248ca2155e14fcb92dc1162e7bfdcc
+guid: 4c1bc664cb42444a7a3c4a9d815fab60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5810790020161345057
-    second: win_image_0
+      213: 7263473897619277768
+    second: FondoTexto 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: win_image_0
+      name: FondoTexto 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 844
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1261a188cb214a050800000000000000
-      internalID: 5810790020161345057
+      spriteID: 8c74beeb60b0dc460800000000000000
+      internalID: 7263473897619277768
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      win_image_0: 5810790020161345057
+      FondoTexto 1_0: 7263473897619277768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
