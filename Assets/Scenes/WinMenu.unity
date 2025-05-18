@@ -268,8 +268,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ' Menu Principal'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
-  m_sharedMaterial: {fileID: 6509869432110760523, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -405,8 +405,8 @@ MonoBehaviour:
   m_text: "En la oscuridad, solo un perro con pilas y mucha paciencia pod\xEDa salvar
     el d\xEDa... o al menos apagar la radio."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 89ad2a52813da414f88c038014c5febf, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 89ad2a52813da414f88c038014c5febf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void MostrarAyuda()
     {
-        Debug.Log("Mostrar ayuda...");
+         SceneManager.LoadScene("Help");
     }
 
     public void Salir()
