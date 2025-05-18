@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     public void IrAIntro()
     {
+        
         SceneManager.LoadScene("IntroGame");
     }
 
