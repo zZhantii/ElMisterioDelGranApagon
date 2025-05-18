@@ -8,10 +8,9 @@ public class IntroGameManager : MonoBehaviour
     [Header("Texto de introducción")]
     public TextMeshProUGUI textoUI;
     public string[] frases;
-    public float velocidadEscritura = 0.05f;
+    public float velocidadEscritura = 0.01f;
     public float tiempoEntreFrases = 1f;
 
-    private bool puedeComenzar = false;
     private bool textoTerminado = false;
 
     void Start()
@@ -69,6 +68,7 @@ public class IntroGameManager : MonoBehaviour
 
         textoUI.text = "<i>Haz clic para comenzar...</i>";
         textoTerminado = true;
+        Time.timeScale = 1f;
     }
 
     void IniciarJuego()
