@@ -5,10 +5,10 @@ public class GameOverManager : MonoBehaviour
 {
     public void ReiniciarJuego()
     {
+        GameManager.instance.ResetGame();
         SceneManager.LoadScene("MainLevel", LoadSceneMode.Single);
         SceneManager.LoadSceneAsync("Map", LoadSceneMode.Additive);
 
-        GameManager.instance.ResetGame();
         GameManager.instance.IniciarJuego();
     }
 
