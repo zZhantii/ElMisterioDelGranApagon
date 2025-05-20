@@ -10,8 +10,11 @@ public class DonFauno : CharacterController
 
     public AudioSource pasosAudioSource; 
     public AudioClip pasosClip;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
-private bool powerUpActivo = false;
+
+    private bool powerUpActivo = false;
 private float powerUpTimer = 0f;
 private float velocidadOriginal;
 public float velocidadAumentada = 10f;
@@ -32,9 +35,24 @@ public void ActivarPowerUp(float duracion)
     {
         base.Start();
 
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         if (luzJugador == null)
         {
             luzJugador = GetComponent<Light2D>();
+        }
+        
+    }
+
+    void Awake()
+    {
+        // Reiniciar animator por si viene del menú u otra escena
+        var animator = GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.Rebind(); // Reinicia el Animator
+            animator.Update(0); // Reinicia el estado actual
         }
     }
 
@@ -42,13 +60,19 @@ public void ActivarPowerUp(float duracion)
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+
         Vector2 direccion = new Vector2(h, v).normalized;
-
         Mover(direccion);
-
 
         bool estaMoviendose = direccion.magnitude > 0.1f;
 
+        // Enviar valores al Animator
+        animator.SetFloat("MoveX", h);
+        animator.SetFloat("MoveY", v);
+
+       
+
+        // Sonido de pasos
         if (estaMoviendose)
         {
             if (!pasosAudioSource.isPlaying)
@@ -66,16 +90,17 @@ public void ActivarPowerUp(float duracion)
             }
         }
 
+        // Control del Power-Up
         if (powerUpActivo)
-{
-    powerUpTimer -= Time.deltaTime;
-    if (powerUpTimer <= 0f)
-    {
-        powerUpActivo = false;
-        velocidad = velocidadOriginal;
-        Debug.Log("Power-Up de velocidad terminado.");
-    }
-}
+        {
+            powerUpTimer -= Time.deltaTime;
+            if (powerUpTimer <= 0f)
+            {
+                powerUpActivo = false;
+                velocidad = velocidadOriginal;
+                Debug.Log("Power-Up de velocidad terminado.");
+            }
+        }
     }
 
     protected void OnCollisionEnter2D(Collision2D colision)

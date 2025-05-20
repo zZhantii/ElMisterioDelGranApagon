@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,10 +116,10 @@ TextureImporter:
       name: DonFaunoAbajo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1303
-        height: 722
+        x: 3
+        y: 2
+        width: 216
+        height: 579
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,11 +134,121 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: DonFaunoAbajo_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2
+        width: 230
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4df518d259e664d8dfbc6c5c995dcb
+      internalID: 1181777466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunoAbajo_2
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2
+        width: 222
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eec3a314a1459e449a1b8445436a97d
+      internalID: -395851567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunoAbajo_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 2
+        width: 212
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f446b4d605ac7d44da0f09edc7c75480
+      internalID: 161192709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunoAbajo_4
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 3
+        width: 220
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfcfa9518b8f5641808e6ca8964ebe5
+      internalID: 1506515662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunoAbajo_5
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 2
+        width: 211
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b67b37ca2c0da438f8cf30e19a4ba5
+      internalID: 1999141385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 600b8ee28e3efff4d805e6e8315f0800
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +256,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       DonFaunoAbajo_0: 8804434860004753072
+      DonFaunoAbajo_1: 1181777466
+      DonFaunoAbajo_2: -395851567
+      DonFaunoAbajo_3: 161192709
+      DonFaunoAbajo_4: 1506515662
+      DonFaunoAbajo_5: 1999141385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

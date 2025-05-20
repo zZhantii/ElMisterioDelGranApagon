@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
         tiempoRestante = tiempoLimite;
         pilasTotales = 0;
         juegoTerminado = false;
+        partidaIniciada = false;
     }
 
     public void IniciarJuego()
@@ -92,7 +93,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
         juegoTerminado = true;
-            partidaIniciada = false;
+        partidaIniciada = false;
     
     }
 

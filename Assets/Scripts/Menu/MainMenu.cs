@@ -14,8 +14,6 @@ public class MainMenu : MonoBehaviour
         AsyncOperation mainLevel = SceneManager.LoadSceneAsync("MainLevel", LoadSceneMode.Single);
         AsyncOperation map = SceneManager.LoadSceneAsync("Map", LoadSceneMode.Additive);
 
-        GameManager.instance.IniciarJuego();
-
         while (!mainLevel.isDone || !map.isDone)
         {
             yield return null;
@@ -23,6 +21,7 @@ public class MainMenu : MonoBehaviour
 
         if (GameManager.instance != null)
         {
+            GameManager.instance.ResetGame();  
             GameManager.instance.IniciarJuego();
         }
     }

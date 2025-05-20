@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 24248ca2155e14fcb92dc1162e7bfdcc
+guid: 45bdb14d88f1c3d4282cfbefd81cef55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5810790020161345057
-    second: win_image_0
+      213: -8148441547920376822
+    second: DonFaunLateral_0
+  - first:
+      213: 1347632940279914429
+    second: DonFaunLateral_1
+  - first:
+      213: 118952614405640934
+    second: DonFaunLateral_2
+  - first:
+      213: -3141581776532769505
+    second: DonFaunLateral_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,19 +106,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: win_image_0
+      name: DonFaunLateral_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 2
+        y: 150
+        width: 315
+        height: 691
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1261a188cb214a050800000000000000
-      internalID: 5810790020161345057
+      spriteID: e287eee2a2033174ca51880547e87549
+      internalID: -259369196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunLateral_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 149
+        width: 329
+        height: 692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951dfde6df826e04a9184a7de1fc7cb9
+      internalID: -1211952636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunLateral_2
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 150
+        width: 331
+        height: 691
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ca764b54baf0740ba8b7ece3b172db
+      internalID: 628679000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunLateral_3
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 149
+        width: 325
+        height: 692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45784b1fd1033834eb4e842664ac832f
+      internalID: -1151932743
       vertices: []
       indices: 
       edges: []
@@ -151,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a9c84eb404f06b445b3020d8227d237b
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      win_image_0: 5810790020161345057
+      DonFaunLateral_0: -259369196
+      DonFaunLateral_1: -1211952636
+      DonFaunLateral_2: 628679000
+      DonFaunLateral_3: -1151932743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

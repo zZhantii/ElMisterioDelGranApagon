@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: bf506ec50e323aa48821295ab50b9492
+guid: 1cd920c0ec54d304dac7b83da22e9135
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1705366854281314064
-    second: DonFaunoWalk (1)_0
-  - first:
-      213: 6992828583393203912
-    second: DonFaunoWalk (1)_1
-  - first:
-      213: 4679639676377636032
-    second: DonFaunoWalk (1)_2
-  - first:
-      213: -5025789750813911563
-    second: DonFaunoWalk (1)_3
+      213: -2187214954761149373
+    second: "Don Fauno Ladr\xEDez_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 132, y: 80, z: 211, w: 106}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -105,93 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DonFaunoWalk (1)_0
+      name: "Don Fauno Ladr\xEDez_0"
       rect:
         serializedVersion: 2
-        x: 61
-        y: 345
-        width: 231
-        height: 325
+        x: 131
+        y: 79
+        width: 686
+        height: 842
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01fb9295e1eaaa710800000000000000
-      internalID: 1705366854281314064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DonFaunoWalk (1)_1
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 345
-        width: 224
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c699580c848b0160800000000000000
-      internalID: 6992828583393203912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DonFaunoWalk (1)_2
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 345
-        width: 224
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cc105bed7b61f040800000000000000
-      internalID: 4679639676377636032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DonFaunoWalk (1)_3
-      rect:
-        serializedVersion: 2
-        x: 757
-        y: 345
-        width: 222
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f510f279dec04ab0800000000000000
-      internalID: -5025789750813911563
+      spriteID: 3442a06469375a1e0800000000000000
+      internalID: -2187214954761149373
       vertices: []
       indices: 
       edges: []
@@ -200,8 +138,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -210,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DonFaunoWalk (1)_0: 1705366854281314064
-      DonFaunoWalk (1)_1: 6992828583393203912
-      DonFaunoWalk (1)_2: 4679639676377636032
-      DonFaunoWalk (1)_3: -5025789750813911563
+      "Don Fauno Ladr\xEDez_0": -2187214954761149373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
