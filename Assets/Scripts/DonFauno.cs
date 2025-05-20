@@ -5,32 +5,32 @@ using TMPro;
 public class DonFauno : CharacterController
 {
     public int vida = 1;
-    public TextMeshProUGUI gameOverText;
+    // public TextMeshProUGUI gameOverText;
     public Light2D luzJugador;
 
-    public AudioSource pasosAudioSource; 
+    public AudioSource pasosAudioSource;
     public AudioClip pasosClip;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
 
     private bool powerUpActivo = false;
-private float powerUpTimer = 0f;
-private float velocidadOriginal;
-public float velocidadAumentada = 10f;
-public void ActivarPowerUp(float duracion)
-{
-    if (!powerUpActivo)
+    private float powerUpTimer = 0f;
+    private float velocidadOriginal;
+    public float velocidadAumentada = 10f;
+    public void ActivarPowerUp(float duracion)
     {
-        velocidadOriginal = velocidad; 
-        velocidad = velocidadAumentada;
+        if (!powerUpActivo)
+        {
+            velocidadOriginal = velocidad;
+            velocidad = velocidadAumentada;
+        }
+
+        powerUpActivo = true;
+        powerUpTimer = duracion;
+
+        Debug.Log("Power-Up de velocidad activado por " + duracion + " segundos.");
     }
-
-    powerUpActivo = true;
-    powerUpTimer = duracion;
-
-    Debug.Log("Power-Up de velocidad activado por " + duracion + " segundos.");
-}
     protected override void Start()
     {
         base.Start();
@@ -62,7 +62,13 @@ public void ActivarPowerUp(float duracion)
         float v = Input.GetAxisRaw("Vertical");
 
         Vector2 direccion = new Vector2(h, v).normalized;
+
+    if (GameManager.instance.puedeMoverse)
+        {
         Mover(direccion);
+        }
+        
+
 
         bool estaMoviendose = direccion.magnitude > 0.1f;
 
@@ -133,17 +139,16 @@ public void ActivarPowerUp(float duracion)
 
     public void GameOver()
     {
-        if (gameOverText != null)
-        {
-            gameOverText.enabled = true;
-            Debug.Log("gameOverText habilitado.");
-        }
-        else
-        {
-            Debug.LogError("gameOverText no está asignado.");
-        }
+        // if (gameOverText != null)
+        // {
+        //     gameOverText.enabled = true;
+        //     Debug.Log("gameOverText habilitado.");
+        // }
+        // else
+        // {
+        //     Debug.LogError("gameOverText no está asignado.");
+        // }
 
-        Time.timeScale = 0;
         Debug.Log("Game Over: DonFauno ha sido derrotado.");
 
         // Llamar al GameManager para terminar el juego

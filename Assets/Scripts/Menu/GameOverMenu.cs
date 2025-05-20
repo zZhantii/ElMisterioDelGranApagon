@@ -1,16 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameOverManager : MonoBehaviour
 {
     public void ReiniciarJuego()
     {
-        SceneManager.LoadScene("MainLevel", LoadSceneMode.Single);
-        SceneManager.LoadSceneAsync("Map", LoadSceneMode.Additive);
-
         GameManager.instance.ResetGame();
-        GameManager.instance.IniciarJuego();
+        // Debug.Log("Reiniciando juego...");
+        SceneManager.LoadScene("MainLevel", LoadSceneMode.Single);
+
+        SceneManager.LoadScene("Map", LoadSceneMode.Additive);
+        // Debug.Log("iniciando juego...");
+        GameManager.instance.IniciarJuego2();
     }
+
+
 
     public void VolverAlMenu()
     {

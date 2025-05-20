@@ -2,16 +2,28 @@ using UnityEngine;
 
 public class IgorJimenez : CharacterController
 {
-     public Transform jugador; 
+     public Transform jugador;
+     public AudioClip igorMusic;          
+    private AudioSource audioSource;
 
     protected override void Start()
     {
         base.Start();
         GameObject faunoGO = GameObject.FindGameObjectWithTag("Player");
 
-        if (faunoGO != null) {
+        if (faunoGO != null)
+        {
             jugador = faunoGO.transform;
-        } 
+        }
+
+
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+
+
+        audioSource.clip = igorMusic;
+
+        audioSource.pitch = 1.5f;
     }
 
     

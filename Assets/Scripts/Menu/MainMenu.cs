@@ -4,32 +4,23 @@ using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
-    public void Jugar()
+    public GameObject MusicaPrincipal;
+    public void IrAIntro()
     {
-        StartCoroutine(CargarJuego());
-    }
+        MusicaMenu musica = FindFirstObjectByType<MusicaMenu>();
 
-    private IEnumerator CargarJuego()
-    {
-        AsyncOperation mainLevel = SceneManager.LoadSceneAsync("MainLevel", LoadSceneMode.Single);
-        AsyncOperation map = SceneManager.LoadSceneAsync("Map", LoadSceneMode.Additive);
 
-        while (!mainLevel.isDone || !map.isDone)
+        if (musica != null)
         {
-            yield return null;
+            Destroy(musica.gameObject);
         }
-
-        if (GameManager.instance != null)
-        {
-            GameManager.instance.ResetGame();  
-            GameManager.instance.IniciarJuego();
-        }
+        SceneManager.LoadScene("IntroGame");
     }
-
 
     public void MostrarAyuda()
     {
-        Debug.Log("Mostrar ayuda...");
+
+        SceneManager.LoadScene("Help");
     }
 
     public void Salir()
@@ -38,8 +29,8 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
 
         // Cierra el editor
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false; 
-        #endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

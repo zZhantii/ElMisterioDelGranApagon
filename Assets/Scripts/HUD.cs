@@ -14,7 +14,19 @@ public class HUD : MonoBehaviour
         }
 
         pilas.text = GameManager.instance.PilasTotales + " / " + GameManager.instance.PilasRestantes;
-        time.text = GameManager.instance.TiempoRestante.ToString("F0") + " s";
+
+        IgorJimenez igor = FindFirstObjectByType<IgorJimenez>();
+
+        if (igor != null)
+        {
+            time.gameObject.SetActive(false);
+            // pilas.text = " ";
+        }
+        else
+        {
+             time.text = GameManager.instance.TiempoRestante.ToString("F0") + " s";
+        }
+       
     }
 
 

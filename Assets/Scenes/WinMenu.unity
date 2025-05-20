@@ -268,8 +268,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ' Menu Principal'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
-  m_sharedMaterial: {fileID: 6509869432110760523, guid: 1336ad9a888106f48baf9111c05c87b6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -405,8 +405,8 @@ MonoBehaviour:
   m_text: "En la oscuridad, solo un perro con pilas y mucha paciencia pod\xEDa salvar
     el d\xEDa... o al menos apagar la radio."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 89ad2a52813da414f88c038014c5febf, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 89ad2a52813da414f88c038014c5febf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -595,6 +595,7 @@ GameObject:
   - component: {fileID: 1575883361}
   - component: {fileID: 1575883360}
   - component: {fileID: 1575883359}
+  - component: {fileID: 1575883362}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -609,7 +610,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575883358}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1575883360
 Camera:
   m_ObjectHideFlags: 0
@@ -676,6 +677,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1575883362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575883358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1828891039
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     private bool partidaIniciada = false;
     public bool PartidaIniciada => partidaIniciada;
 
+    public bool puedeMoverse = false;
+
 
     void Awake()
     {
@@ -76,8 +78,14 @@ public class GameManager : MonoBehaviour
         partidaIniciada = true;
     }
 
+    public void IniciarJuego2()
+    {
+        partidaIniciada = true;
+        puedeMoverse = true;
+    }
 
-    public void TerminarJuego(bool win=false)
+
+    public void TerminarJuego(bool win = false)
     {
 
         if (win)
@@ -96,5 +104,9 @@ public class GameManager : MonoBehaviour
         partidaIniciada = false;
     
     }
+
+
+
+    
 
 }
