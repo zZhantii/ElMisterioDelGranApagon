@@ -1548,6 +1548,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3658330661887184961, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3942062268103606437, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
       propertyPath: m_Name
       value: DonFauno
