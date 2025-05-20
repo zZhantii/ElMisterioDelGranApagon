@@ -41,7 +41,7 @@ public class RadioController : MonoBehaviour
                 gameObject.SetActive(false);
 
                 // Instanciar a Igor
-                GameObject igorInstance = Instantiate(igorJimenez, jugador.position + offset, Quaternion.identity);
+                GameObject igorInstance = Instantiate(igorJimenez, transform.position + offset, Quaternion.identity);
 
                 // Asignar objetivo a Igor
                 IgorJimenez aiScript = igorInstance.GetComponent<IgorJimenez>();
