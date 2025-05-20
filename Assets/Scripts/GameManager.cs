@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public int PilasRestantes { get { return pilasRestantes; } }
     private int pilasTotales;
 
-    float tiempoLimite = 100f;
+    float tiempoLimite = 30f;
     float tiempoRestante;
     public float TiempoRestante { get { return tiempoRestante; } }
     private bool juegoTerminado = false;
@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
         juegoTerminado = false;
     }
 
+    public void congelarTiempo(float tiempo)
+    {
+        tiempoRestante = tiempo;
+    }
 
     void Update()
     {
@@ -101,11 +105,12 @@ public class GameManager : MonoBehaviour
         }
         juegoTerminado = true;
         partidaIniciada = false;
+        // BuloManager.instance.ResetBulos();
 
     }
 
 
 
-    
+
 
 }
