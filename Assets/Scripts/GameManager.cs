@@ -77,8 +77,14 @@ public class GameManager : MonoBehaviour
         partidaIniciada = true;
     }
 
+    public void IniciarJuego2()
+    {
+        partidaIniciada = true;
+        puedeMoverse = true;
+    }
 
-    public void TerminarJuego(bool win=false)
+
+    public void TerminarJuego(bool win = false)
     {
 
         if (win)
@@ -94,8 +100,8 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
         juegoTerminado = true;
-            partidaIniciada = false;
-    
+        partidaIniciada = false;
+
     }
 
 

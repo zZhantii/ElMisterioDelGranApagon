@@ -122,7 +122,6 @@ public class DonFauno : CharacterController
         //     Debug.LogError("gameOverText no está asignado.");
         // }
 
-        Time.timeScale = 0;
         Debug.Log("Game Over: DonFauno ha sido derrotado.");
 
         // Llamar al GameManager para terminar el juego

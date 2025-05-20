@@ -4,23 +4,23 @@ using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
-     public GameObject MusicaPrincipal;
+    public GameObject MusicaPrincipal;
     public void IrAIntro()
     {
-          MusicaMenu musica = FindFirstObjectByType<MusicaMenu>();
-    
+        MusicaMenu musica = FindFirstObjectByType<MusicaMenu>();
 
-    if (musica != null)
-    {
-        Destroy(musica.gameObject);
-    }
+
+        if (musica != null)
+        {
+            Destroy(musica.gameObject);
+        }
         SceneManager.LoadScene("IntroGame");
     }
 
     public void MostrarAyuda()
     {
-        
-         SceneManager.LoadScene("Help");
+
+        SceneManager.LoadScene("Help");
     }
 
     public void Salir()
@@ -29,8 +29,8 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
 
         // Cierra el editor
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false; 
-        #endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

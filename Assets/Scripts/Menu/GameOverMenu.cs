@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public void ReiniciarJuego()
-{
-    GameManager.instance.ResetGame();
-    SceneManager.LoadScene("MainLevel", LoadSceneMode.Single);
+    {
+        GameManager.instance.ResetGame();
+        // Debug.Log("Reiniciando juego...");
+        SceneManager.LoadScene("MainLevel", LoadSceneMode.Single);
 
-    SceneManager.LoadScene("Map", LoadSceneMode.Additive);
-
-    GameManager.instance.IniciarJuego();
-}
+        SceneManager.LoadScene("Map", LoadSceneMode.Additive);
+        // Debug.Log("iniciando juego...");
+        GameManager.instance.IniciarJuego2();
+    }
 
 
 
