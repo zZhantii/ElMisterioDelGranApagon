@@ -58,7 +58,7 @@ public class IntroGameManager : MonoBehaviour
 
         foreach (string frase in frases)
         {
-            textoUI.text = ""; // limpiar texto anterior
+            textoUI.text = "";
             foreach (char letra in frase)
             {
                 textoUI.text += letra;
