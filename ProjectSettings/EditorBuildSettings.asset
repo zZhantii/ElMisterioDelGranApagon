@@ -29,15 +29,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinMenu.unity
     guid: a251deb8c5d2942e387d5d9e37bb3a4d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/IgorBulos.unity
     guid: 2f2630611cf7541b39939278c40508c8
   - enabled: 1
     path: Assets/Scenes/introGame.unity
-    guid: 2b4ec2989ed9a4f1f9e5946717ee95a2
+    guid: 788505298880ece4f976496b49871379
   - enabled: 1
     path: Assets/Scenes/Help.unity
     guid: 9c46c9a76a25b40dca4c8892f6fc02af
+  - enabled: 1
+    path: Assets/Scenes/EscenaBulo.unity
+    guid: 33748a31f9fb3e142b2141333eff1ccc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
