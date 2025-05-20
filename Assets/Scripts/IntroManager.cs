@@ -15,6 +15,7 @@ public class IntroGameManager : MonoBehaviour
 
     void Start()
     {
+        
         StartCoroutine(CargarEscenasJuego());
     }
 
@@ -52,6 +53,8 @@ public class IntroGameManager : MonoBehaviour
 
     IEnumerator MostrarTexto()
     {
+          yield return new WaitForEndOfFrame(); 
+   
         textoUI.text = "";
 
         foreach (string frase in frases)
@@ -69,6 +72,8 @@ public class IntroGameManager : MonoBehaviour
         textoUI.text = "<i>Haz clic para comenzar...</i>";
         textoTerminado = true;
         Time.timeScale = 1f;
+        GameManager.instance.puedeMoverse = true;
+    
     }
 
     void IniciarJuego()

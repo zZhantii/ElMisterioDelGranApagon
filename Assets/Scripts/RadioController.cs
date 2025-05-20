@@ -52,7 +52,7 @@ public class RadioController : MonoBehaviour
                 }
 
                 buloActivo = true;
-                StartCoroutine(EsperarYCargarBulo());
+                // StartCoroutine(EsperarYCargarBulo());
             }
             else
             {

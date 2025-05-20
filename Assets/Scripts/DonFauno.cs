@@ -5,7 +5,7 @@ using TMPro;
 public class DonFauno : CharacterController
 {
     public int vida = 1;
-    public TextMeshProUGUI gameOverText;
+    // public TextMeshProUGUI gameOverText;
     public Light2D luzJugador;
 
     public AudioSource pasosAudioSource;
@@ -44,7 +44,11 @@ public class DonFauno : CharacterController
         float v = Input.GetAxisRaw("Vertical");
         Vector2 direccion = new Vector2(h, v).normalized;
 
+    if (GameManager.instance.puedeMoverse)
+        {
         Mover(direccion);
+        }
+        
 
 
         bool estaMoviendose = direccion.magnitude > 0.1f;
@@ -108,15 +112,15 @@ public class DonFauno : CharacterController
 
     public void GameOver()
     {
-        if (gameOverText != null)
-        {
-            gameOverText.enabled = true;
-            Debug.Log("gameOverText habilitado.");
-        }
-        else
-        {
-            Debug.LogError("gameOverText no está asignado.");
-        }
+        // if (gameOverText != null)
+        // {
+        //     gameOverText.enabled = true;
+        //     Debug.Log("gameOverText habilitado.");
+        // }
+        // else
+        // {
+        //     Debug.LogError("gameOverText no está asignado.");
+        // }
 
         Time.timeScale = 0;
         Debug.Log("Game Over: DonFauno ha sido derrotado.");

@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     private bool partidaIniciada = false;
     public bool PartidaIniciada => partidaIniciada;
 
+    public bool puedeMoverse = false;
+
 
     void Awake()
     {
