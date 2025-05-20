@@ -19,8 +19,8 @@ public class HUD : MonoBehaviour
 
         if (igor != null)
         {
+            GameManager.instance.congelarTiempo(1f);
             time.gameObject.SetActive(false);
-            // pilas.text = " ";
         }
         else
         {

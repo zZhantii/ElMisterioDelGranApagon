@@ -32,13 +32,12 @@ public class RadioController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && !buloActivo)
+        if (collision.CompareTag("Player"))
         {
             if (GameManager.instance != null && GameManager.instance.PilasTotales >= 4)
             {
                 Debug.Log("Jugador cerca de la radio y tiene todas las pilas. Activando a Igor...");
 
-                gameObject.SetActive(false);
 
                 // Instanciar a Igor
                 GameObject igorInstance = Instantiate(igorJimenez, jugador.position + offset, Quaternion.identity);
@@ -51,8 +50,10 @@ public class RadioController : MonoBehaviour
                     ActivarRayo();
                 }
 
-                buloActivo = true;
-                // StartCoroutine(EsperarYCargarBulo());
+                gameObject.SetActive(false);
+
+                BuloController.instance.IniciarSecuenciaBulos();
+
             }
             else
             {
@@ -61,24 +62,5 @@ public class RadioController : MonoBehaviour
         }
     }
 
-    IEnumerator EsperarYCargarBulo()
-    {
-        yield return new WaitForSecondsRealtime(4f);
-        Debug.Log("Cargando bulos escena");
-        SceneManager.LoadScene("IgorBulos", LoadSceneMode.Additive);
-    }
-
-    public void OnBuloTerminado()
-    {
-        Debug.Log("RadioController recibió notificación: bulo terminado.");
-        StartCoroutine(VolverACargarBulo());
-    }
-
-    IEnumerator VolverACargarBulo()
-    {
-        yield return new WaitForSecondsRealtime(2f);
-
-        Debug.Log("Recargando escena del bulo para mostrar otro...");
-        SceneManager.LoadScene("IgorBulos", LoadSceneMode.Additive);
-    }
+    
 }

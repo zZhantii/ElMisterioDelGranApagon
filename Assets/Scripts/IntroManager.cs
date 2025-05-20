@@ -5,7 +5,6 @@ using TMPro;
 
 public class IntroGameManager : MonoBehaviour
 {
-    [Header("Texto de introducción")]
     public TextMeshProUGUI textoUI;
     public string[] frases;
     public float velocidadEscritura = 0.01f;
