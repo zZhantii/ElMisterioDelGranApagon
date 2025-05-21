@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         pilasTotales += pilasSumar;
     }
 
-    
+
 
     public void ResetGame()
     {
@@ -87,7 +87,6 @@ public class GameManager : MonoBehaviour
     public void IniciarJuego2()
     {
         partidaIniciada = true;
-        puedeMoverse = true;
     }
 
 
