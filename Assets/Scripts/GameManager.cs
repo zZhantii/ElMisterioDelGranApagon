@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public int PilasRestantes { get { return pilasRestantes; } }
     private int pilasTotales;
 
-    float tiempoLimite = 500f;
+    float tiempoLimite = 120f;
     float tiempoRestante;
     public float TiempoRestante { get { return tiempoRestante; } }
     private bool juegoTerminado = false;
@@ -68,6 +68,8 @@ public class GameManager : MonoBehaviour
     {
         pilasTotales += pilasSumar;
     }
+
+    
 
     public void ResetGame()
     {
