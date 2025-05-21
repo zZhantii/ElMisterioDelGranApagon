@@ -1209,6 +1209,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 559398691373491345, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3424143262770422194, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.07
@@ -1285,6 +1289,22 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4943b8712449d48cba74de95c757b8f7, type: 3}
+    - target: {fileID: 6886478193809745715, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_Size.x
+      value: 17.56017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886478193809745715, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_Size.y
+      value: 25.27125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886478193809745715, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_Offset.x
+      value: 4.407898
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886478193809745715, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: m_Offset.y
+      value: -7.7256365
+      objectReference: {fileID: 0}
     - target: {fileID: 8434990930138927632, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
       propertyPath: pasosClip
       value: 
