@@ -5,6 +5,7 @@ public class IgorJimenez : CharacterController
      public Transform jugador;
      public AudioClip igorMusic;          
     private AudioSource audioSource;
+    private Animator animator;
 
     protected override void Start()
     {
@@ -16,6 +17,13 @@ public class IgorJimenez : CharacterController
             jugador = faunoGO.transform;
         }
 
+        // Reiniciar animator por si viene del menú u otra escena
+        var animator = GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.Rebind(); // Reinicia el Animator
+            animator.Update(0); // Reinicia el estado actual
+        }
 
 
         audioSource = gameObject.AddComponent<AudioSource>();

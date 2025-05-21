@@ -306,7 +306,7 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_Sprite: {fileID: -2187214954761149373, guid: 30012b231baaced4b9f573f9095224a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 34.3, y: 42.1}
@@ -329,8 +329,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 5
   vida: 1
-  gameOverText: {fileID: 0}
   luzJugador: {fileID: 0}
+  pasosAudioSource: {fileID: 0}
+  pasosClip: {fileID: 0}
+  velocidadAumentada: 10
 --- !u!114 &7375775981296952155
 MonoBehaviour:
   m_ObjectHideFlags: 0

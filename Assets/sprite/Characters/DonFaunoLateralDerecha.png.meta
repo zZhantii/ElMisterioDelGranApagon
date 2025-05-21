@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 45bdb14d88f1c3d4282cfbefd81cef55
+guid: aaba57d9d1f2aa84dbc3d211607c4df7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8148441547920376822
-    second: DonFaunLateral_0
+      213: -137395768761969013
+    second: DonFaunoLateralDerecha_0
   - first:
-      213: 1347632940279914429
-    second: DonFaunLateral_1
+      213: 6007467721897708279
+    second: DonFaunoLateralDerecha_1
   - first:
-      213: 118952614405640934
-    second: DonFaunLateral_2
+      213: 5818092161607912808
+    second: DonFaunoLateralDerecha_2
   - first:
-      213: -3141581776532769505
-    second: DonFaunLateral_3
+      213: 6344869903883218565
+    second: DonFaunoLateralDerecha_3
+  - first:
+      213: -6000409371609131984
+    second: DonFaunoLateralDerecha_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 13
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DonFaunLateral_0
+      name: DonFaunoLateralDerecha_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 150
-        width: 315
-        height: 691
+        x: 13
+        y: 1
+        width: 264
+        height: 565
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e287eee2a2033174ca51880547e87549
-      internalID: -259369196
+      spriteID: 4f65e06f0f6867943bc15ed955086b48
+      internalID: 338665502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DonFaunLateral_1
+      name: DonFaunoLateralDerecha_1
       rect:
         serializedVersion: 2
-        x: 334
-        y: 149
-        width: 329
-        height: 692
+        x: 287
+        y: 1
+        width: 264
+        height: 565
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 951dfde6df826e04a9184a7de1fc7cb9
-      internalID: -1211952636
+      spriteID: 2e291e95f583bd44894ac22702d70914
+      internalID: -1691216379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DonFaunLateral_2
+      name: DonFaunoLateralDerecha_2
       rect:
         serializedVersion: 2
-        x: 654
-        y: 150
-        width: 331
-        height: 691
+        x: 545
+        y: 0
+        width: 264
+        height: 565
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8ca764b54baf0740ba8b7ece3b172db
-      internalID: 628679000
+      spriteID: 23d420d86f7bb7b488aa1dd1ac149551
+      internalID: -1094636738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DonFaunLateral_3
+      name: DonFaunoLateralDerecha_3
       rect:
         serializedVersion: 2
-        x: 992
-        y: 149
-        width: 325
-        height: 692
+        x: 827
+        y: 1
+        width: 257
+        height: 564
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +206,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45784b1fd1033834eb4e842664ac832f
-      internalID: -1151932743
+      spriteID: a0e8e2e386fa54e4991eb78a2e91d2d1
+      internalID: -1979441571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonFaunoLateralDerecha_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1
+        width: 275
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffc7827c339a1c40b933f61179c74ef
+      internalID: -1511989938
       vertices: []
       indices: 
       edges: []
@@ -213,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a9c84eb404f06b445b3020d8227d237b
+    spriteID: e9f8de1188b540d42875e85aa4fffbbd
     internalID: 0
     vertices: []
     indices: 
@@ -225,10 +250,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DonFaunLateral_0: -259369196
-      DonFaunLateral_1: -1211952636
-      DonFaunLateral_2: 628679000
-      DonFaunLateral_3: -1151932743
+      DonFaunoLateralDerecha_0: 338665502
+      DonFaunoLateralDerecha_1: -1691216379
+      DonFaunoLateralDerecha_2: -1094636738
+      DonFaunoLateralDerecha_3: -1979441571
+      DonFaunoLateralDerecha_4: -1511989938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

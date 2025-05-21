@@ -23,6 +23,7 @@ public class IntroGameManager : MonoBehaviour
     {
         if (textoTerminado && Input.GetMouseButtonDown(0))
         {
+            GameManager.instance.puedeMoverse = true;
             IniciarJuego();
         }
     }
@@ -53,7 +54,7 @@ public class IntroGameManager : MonoBehaviour
 
     IEnumerator MostrarTexto()
     {
-          yield return new WaitForEndOfFrame(); 
+        yield return new WaitForEndOfFrame(); 
    
         textoUI.text = "";
 
@@ -72,27 +73,24 @@ public class IntroGameManager : MonoBehaviour
         textoUI.text = "<i>Haz clic para comenzar...</i>";
         textoTerminado = true;
         Time.timeScale = 1f;
-        GameManager.instance.puedeMoverse = true;
     
     }
 
     void IniciarJuego()
     {
-        Scene scene = SceneManager.GetSceneByName("MainLevel");
-        foreach (GameObject go in scene.GetRootGameObjects())
-        {
-            if (go.name == "GameContent")
+        textoTerminado = false;
+        textoUI.gameObject.SetActive(false);
+
+    // Buscar al jugador y reiniciar su flipX
+        DonFauno player = FindFirstObjectByType<DonFauno>();
+        if (player != null)
             {
-                go.SetActive(true);
+            SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
+            if (renderer != null)
+            {
+                renderer.flipX = true; // Empezar mirando a la derecha
             }
         }
-
-        if (GameManager.instance != null)
-        {
-            GameManager.instance.ResetGame();
-            GameManager.instance.IniciarJuego();
-        }
-
         SceneManager.UnloadSceneAsync("IntroGame");
     }
 }

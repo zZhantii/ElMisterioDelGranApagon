@@ -63,20 +63,25 @@ public class DonFauno : CharacterController
 
         Vector2 direccion = new Vector2(h, v).normalized;
 
-    if (GameManager.instance.puedeMoverse)
-        {
-        Mover(direccion);
-        }
+        if (GameManager.instance.puedeMoverse)
+            {
+            Mover(direccion);
+            }
         
+         bool estaMoviendose = direccion.magnitude > 0.1f;
 
-
-        bool estaMoviendose = direccion.magnitude > 0.1f;
-
-        // Enviar valores al Animator
         animator.SetFloat("MoveX", h);
         animator.SetFloat("MoveY", v);
 
-       
+        // Voltear sprite si se mueve horizontalmente
+        // if (GameManager.instance.puedeMoverse && estaMoviendose)
+        // {
+        //     if (Mathf.Abs(h) < 0.1f && Mathf.Abs(v) < 0.1f)
+        //     {
+        //         spriteRenderer.flipX = h < 0;
+        //     }
+        // }
+
 
         // Sonido de pasos
         if (estaMoviendose)

@@ -362,8 +362,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1 / 4
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.2
+  m_fontSize: 38.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -941,8 +941,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100 s
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1564,6 +1564,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4943b8712449d48cba74de95c757b8f7, type: 3}
+    - target: {fileID: 7375775981296952155, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
+      propertyPath: personaje
+      value: 
+      objectReference: {fileID: 5033829807772225941}
     - target: {fileID: 8434990930138927632, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
       propertyPath: pasosClip
       value: 

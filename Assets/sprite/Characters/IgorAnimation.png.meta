@@ -1,10 +1,37 @@
 fileFormatVersion: 2
-guid: 913aa4d1ca66edc4395c94e9710e884b
+guid: 8b7e4b5782bc9f948b7515e9ac7ec810
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8804434860004753072
-    second: DonFaunoAbajo_0
+      213: 1448826369194604027
+    second: IgorAnimation_0
+  - first:
+      213: -3785413597698500462
+    second: IgorAnimation_1
+  - first:
+      213: -2435610263284412952
+    second: IgorAnimation_2
+  - first:
+      213: -3826816360212427742
+    second: IgorAnimation_3
+  - first:
+      213: -7674162783618077541
+    second: IgorAnimation_4
+  - first:
+      213: 1446594373582620819
+    second: IgorAnimation_5
+  - first:
+      213: 5964284026434347414
+    second: IgorAnimation_6
+  - first:
+      213: -1730139962021575846
+    second: IgorAnimation_7
+  - first:
+      213: 7239579453003119799
+    second: IgorAnimation_8
+  - first:
+      213: 3962712879477846172
+    second: IgorAnimation_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 13
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,133 +140,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DonFaunoAbajo_0
+      name: IgorAnimation_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 216
-        height: 579
+        x: 0
+        y: 43
+        width: 494
+        height: 821
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0be36a67bd2af2a70800000000000000
-      internalID: 8804434860004753072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DonFaunoAbajo_1
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 2
-        width: 230
-        height: 579
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe4df518d259e664d8dfbc6c5c995dcb
-      internalID: 1181777466
+      spriteID: a2f5274f9da4bfc4da159b0d4c70bef3
+      internalID: 280933294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DonFaunoAbajo_2
+      name: IgorAnimation_1
       rect:
         serializedVersion: 2
-        x: 470
-        y: 2
-        width: 222
-        height: 579
+        x: 1020
+        y: 68
+        width: 497
+        height: 795
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eec3a314a1459e449a1b8445436a97d
-      internalID: -395851567
+      spriteID: 26b4e97a8b3e44b4489b6095faace1ed
+      internalID: 1390449897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DonFaunoAbajo_3
+      name: IgorAnimation_2
       rect:
         serializedVersion: 2
-        x: 703
-        y: 2
-        width: 212
-        height: 579
+        x: 2040
+        y: 76
+        width: 494
+        height: 772
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f446b4d605ac7d44da0f09edc7c75480
-      internalID: 161192709
+      spriteID: 79e7c24c0c2a1694a8c944c460f30a13
+      internalID: 961526311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DonFaunoAbajo_4
+      name: IgorAnimation_3
       rect:
         serializedVersion: 2
-        x: 933
-        y: 3
-        width: 220
-        height: 578
+        x: 3069
+        y: 65
+        width: 495
+        height: 798
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dfcfa9518b8f5641808e6ca8964ebe5
-      internalID: 1506515662
+      spriteID: 38d1f5f8022cc6e4c82b1a51f0f62a8d
+      internalID: 1310525412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DonFaunoAbajo_5
+      name: IgorAnimation_4
       rect:
         serializedVersion: 2
-        x: 1170
-        y: 2
-        width: 211
-        height: 579
+        x: 4092
+        y: 49
+        width: 494
+        height: 815
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4b67b37ca2c0da438f8cf30e19a4ba5
-      internalID: 1999141385
+      spriteID: 02aca2b921fca254c92a0e40b6c099cd
+      internalID: -729280779
       vertices: []
       indices: 
       edges: []
@@ -248,7 +253,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 600b8ee28e3efff4d805e6e8315f0800
+    spriteID: b9f204c96eee969468ba3fe359864631
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +265,16 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DonFaunoAbajo_0: 8804434860004753072
-      DonFaunoAbajo_1: 1181777466
-      DonFaunoAbajo_2: -395851567
-      DonFaunoAbajo_3: 161192709
-      DonFaunoAbajo_4: 1506515662
-      DonFaunoAbajo_5: 1999141385
+      IgorAnimation_0: 280933294
+      IgorAnimation_1: 1390449897
+      IgorAnimation_2: 961526311
+      IgorAnimation_3: 1310525412
+      IgorAnimation_4: -729280779
+      IgorAnimation_5: -1301647208
+      IgorAnimation_6: 1177355747
+      IgorAnimation_7: 1813959380
+      IgorAnimation_8: -670401049
+      IgorAnimation_9: 2116975532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
