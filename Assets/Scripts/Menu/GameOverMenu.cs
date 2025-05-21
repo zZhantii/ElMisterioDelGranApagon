@@ -15,8 +15,6 @@ public class GameOverManager : MonoBehaviour
         GameManager.instance.IniciarJuego2();
     }
 
-
-
     public void VolverAlMenu()
     {
         SceneManager.LoadScene("MainMenu");
