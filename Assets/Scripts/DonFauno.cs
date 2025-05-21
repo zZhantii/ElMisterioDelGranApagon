@@ -5,7 +5,6 @@ using TMPro;
 public class DonFauno : CharacterController
 {
     public int vida = 1;
-    // public TextMeshProUGUI gameOverText;
     public Light2D luzJugador;
 
     public AudioSource pasosAudioSource;
