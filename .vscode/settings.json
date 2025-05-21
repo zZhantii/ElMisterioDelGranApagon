@@ -66,6 +66,6 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "El misterio del gran apagon.sln",
+    "dotnet.defaultSolution": "El misterio del gran apagón.sln",
     "git.ignoreLimitWarning": true
 }
