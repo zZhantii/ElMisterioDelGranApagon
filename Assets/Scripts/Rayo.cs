@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Rayo : MonoBehaviour
 {
-    public float duracion = 2.0f; 
+    public float duracion = 5.0f; 
   
   
 

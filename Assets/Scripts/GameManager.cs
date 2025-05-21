@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
         tiempoRestante = tiempoLimite;
         pilasTotales = 0;
         juegoTerminado = false;
+        partidaIniciada = false;
     }
 
     public void IniciarJuego()

@@ -10,6 +10,9 @@ public class DonFauno : CharacterController
 
     public AudioSource pasosAudioSource;
     public AudioClip pasosClip;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
 
     private bool powerUpActivo = false;
     private float powerUpTimer = 0f;
@@ -32,9 +35,24 @@ public class DonFauno : CharacterController
     {
         base.Start();
 
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         if (luzJugador == null)
         {
             luzJugador = GetComponent<Light2D>();
+        }
+        
+    }
+
+    void Awake()
+    {
+        // Reiniciar animator por si viene del menú u otra escena
+        var animator = GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.Rebind(); // Reinicia el Animator
+            animator.Update(0); // Reinicia el estado actual
         }
     }
 
@@ -42,17 +60,30 @@ public class DonFauno : CharacterController
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+
         Vector2 direccion = new Vector2(h, v).normalized;
 
-    if (GameManager.instance.puedeMoverse)
-        {
-        Mover(direccion);
-        }
+        if (GameManager.instance.puedeMoverse)
+            {
+            Mover(direccion);
+            }
         
+         bool estaMoviendose = direccion.magnitude > 0.1f;
+
+        animator.SetFloat("MoveX", h);
+        animator.SetFloat("MoveY", v);
+
+        // Voltear sprite si se mueve horizontalmente
+        // if (GameManager.instance.puedeMoverse && estaMoviendose)
+        // {
+        //     if (Mathf.Abs(h) < 0.1f && Mathf.Abs(v) < 0.1f)
+        //     {
+        //         spriteRenderer.flipX = h < 0;
+        //     }
+        // }
 
 
-        bool estaMoviendose = direccion.magnitude > 0.1f;
-
+        // Sonido de pasos
         if (estaMoviendose)
         {
             if (!pasosAudioSource.isPlaying)
@@ -70,6 +101,7 @@ public class DonFauno : CharacterController
             }
         }
 
+        // Control del Power-Up
         if (powerUpActivo)
         {
             powerUpTimer -= Time.deltaTime;
