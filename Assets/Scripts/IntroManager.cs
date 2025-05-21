@@ -14,7 +14,7 @@ public class IntroGameManager : MonoBehaviour
 
     void Start()
     {
-        
+
         StartCoroutine(CargarEscenasJuego());
     }
 
@@ -53,8 +53,8 @@ public class IntroGameManager : MonoBehaviour
 
     IEnumerator MostrarTexto()
     {
-        yield return new WaitForEndOfFrame(); 
-   
+        yield return new WaitForEndOfFrame();
+
         textoUI.text = "";
 
         foreach (string frase in frases)
@@ -72,7 +72,7 @@ public class IntroGameManager : MonoBehaviour
         textoUI.text = "<i>Haz clic para comenzar...</i>";
         textoTerminado = true;
         Time.timeScale = 1f;
-    
+
     }
 
     void IniciarJuego()
@@ -80,16 +80,20 @@ public class IntroGameManager : MonoBehaviour
         textoTerminado = false;
         textoUI.gameObject.SetActive(false);
 
-    // Buscar al jugador y reiniciar su flipX
+        // Buscar al jugador y reiniciar su flipX
         DonFauno player = FindFirstObjectByType<DonFauno>();
         if (player != null)
-            {
+        {
             SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
             if (renderer != null)
             {
                 renderer.flipX = true; // Empezar mirando a la derecha
             }
         }
+
+        GameManager.instance.ResetGame();
+        GameManager.instance.IniciarJuego();
+
         SceneManager.UnloadSceneAsync("IntroGame");
     }
 }
