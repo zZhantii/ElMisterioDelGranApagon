@@ -135,6 +135,9 @@ public class MenuSystem : MonoBehaviour
 
     public void Salir()
     {
+
+     
+
         SceneManager.LoadScene("MainMenu");
         GameManager.instance.ResetGame();
     }
