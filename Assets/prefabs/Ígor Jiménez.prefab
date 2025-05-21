@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b435c635d42144bac6d3879e33caa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2.2
+  velocidad: 3
   jugador: {fileID: 3424143262770422194, guid: 87ce621a4a8e5d8499f32ed651fd782f, type: 3}
   igorMusic: {fileID: 8300000, guid: fc800636cfba64d3c85df4a25162f9dc, type: 3}
 --- !u!61 &8076578912525472117
