@@ -64,16 +64,13 @@ public class MenuSystem : MonoBehaviour
     // Coroutine con tiempo de espera para que termine de cargar el menu
     private IEnumerator ConfigurarBotonesCoroutine()
     {
-        // Tiempo de espera
         yield return new WaitForSecondsRealtime(0.1f);
 
-        // Recoge todos los Canvas de la escena
         Canvas[] todosLosCanvas = FindObjectsByType<Canvas>(FindObjectsSortMode.None);
 
         if (todosLosCanvas.Length == 0)
         {
             Debug.LogWarning("No se encontró ningún Canvas en la escena PauseMenu.");
-            // Termina el coroutine 
             yield break;
         }
 
@@ -101,6 +98,15 @@ public class MenuSystem : MonoBehaviour
                         Salir();
                     });
                 }
+                else if (boton.name.Contains("Ayuda"))
+                {
+                    boton.onClick.RemoveAllListeners();
+
+                    boton.onClick.AddListener(() =>
+                    {
+                        MostrarAyuda();
+                    });
+                }
             }
 
         }
@@ -119,16 +125,20 @@ public class MenuSystem : MonoBehaviour
         {
             menuCargado = false;
             enTransicion = false;
-            // Debug.Log("Menú de pausa descargado correctamente");
         };
+    }
+
+    public void MostrarAyuda()
+    {
+        SceneManager.LoadScene("Help");
     }
 
     public void Salir()
     {
-        Application.Quit();
-        // Cierra el editor
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+
+     
+
+        SceneManager.LoadScene("MainMenu");
+        GameManager.instance.ResetGame();
     }
 }

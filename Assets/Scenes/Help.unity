@@ -589,8 +589,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ' Menu Principal'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -726,8 +726,8 @@ MonoBehaviour:
   m_text: "Re\xFAne todas las pilas del mapa para encender la radio. Debes salir
     del s\xF3tano con ella a toda prisa por la puerta principal."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -862,8 +862,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Controles
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -998,8 +998,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Derecha
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1134,8 +1134,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Izquierda
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1270,8 +1270,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Arriba
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1618,8 +1618,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Objetivo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1754,8 +1754,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Abajo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
+  m_sharedMaterial: {fileID: -1981574687634907865, guid: 81e3a952d000f48aaa47ae2b6db07508, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
