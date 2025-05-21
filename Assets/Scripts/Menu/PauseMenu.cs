@@ -11,7 +11,6 @@ public class MenuSystem : MonoBehaviour
 
     public static MenuSystem Instance { get; private set; }
 
-    // Singleton para asegurarme que solo haya una instancia del script
     void Awake()
     {
         if (Instance == null)
@@ -47,7 +46,6 @@ public class MenuSystem : MonoBehaviour
 
         SceneManager.LoadSceneAsync("PauseMenu", LoadSceneMode.Additive).completed += (asyncOperation) =>
         {
-            // Debug.Log("PauseMenu cargado");
             menuCargado = true;
             enTransicion = false;
 
@@ -55,13 +53,11 @@ public class MenuSystem : MonoBehaviour
         };
     }
 
-    // Metodo para la configuracion de los botones del menu de pausa
     private void ConfigurarBotonesPausa()
     {
         StartCoroutine(ConfigurarBotonesCoroutine());
     }
 
-    // Coroutine con tiempo de espera para que termine de cargar el menu
     private IEnumerator ConfigurarBotonesCoroutine()
     {
         yield return new WaitForSecondsRealtime(0.1f);
@@ -135,9 +131,6 @@ public class MenuSystem : MonoBehaviour
 
     public void Salir()
     {
-
-     
-
         SceneManager.LoadScene("MainMenu");
         GameManager.instance.ResetGame();
     }
