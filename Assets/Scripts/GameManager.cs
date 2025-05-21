@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
 
     public void IniciarJuego2()
     {
+        puedeMoverse = true;
         partidaIniciada = true;
     }
 
@@ -107,12 +108,8 @@ public class GameManager : MonoBehaviour
         }
         juegoTerminado = true;
         partidaIniciada = false;
+        puedeMoverse = false;
         // BuloManager.instance.ResetBulos();
 
     }
-
-
-
-
-
 }
