@@ -9,13 +9,12 @@ public class TouchMessage : MonoBehaviour
     public float duration = 3f;
     public float typingSpeed = 0.05f;
     private bool isTouching = false;
- 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !isTouching)
         {
-            if (GameManager.instance.PilasTotales < 4)
+            if ( GameManager.instance.PilasTotales < 4)
             {
                 touchText.text = message;
                 isTouching = true;

@@ -179,7 +179,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 10c309b654519114baaaae35f6e27264, type: 2}
-  m_sharedMaterial: {fileID: 7944764954207662269, guid: 10c309b654519114baaaae35f6e27264, type: 2}
+  m_sharedMaterial: {fileID: 2463484945784890610, guid: 10c309b654519114baaaae35f6e27264, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -560,11 +560,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoUI: {fileID: 523835161}
   bulos:
-  - "Se dice\u2026 que si recoges todas las pilas sin fallar, Iker te ofrece un contrato
-    para Cuarto Milenio."
-  - "Una vez, alguien activ\xF3 la radio del juego\u2026 y apareci\xF3 una factura
-    de la luz real"
-  - "En una partida, Iker no apareci\xF3\u2026 porque estaba \u201Ceditando su podcast\u201D"
+  - Se rumorea que han desaparecido los ingenieros de Enfarsa
+  - "La profec\xEDa del monje enchufado: un manuscrito medieval predijo el apag\xF3n"
+  - 'Fue un error de casting: contrataron a un actor para hacer de electricidad'
   velocidadLetra: 0.05
   tiempoVisible: 3
 --- !u!1 &1685789497
